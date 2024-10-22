@@ -69,7 +69,30 @@ transition: background-color 0.3s ease;
 .button:active {
   opacity: 0.6;
 }
+/* BUTTON  */
+.lined-link {
+display: inline-flex;
+align-items: center;
+font-size: 16px;
+line-height: 1.6;
+font-weight: bold;
+color: var(--primary);
+text-decoration: none;
+text-transform: uppercase;
+}
 
+.lined-link::before {
+  margin-right: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary);
+  content: "";
+  transition: width 0.3s ease;
+}
+
+.lined-link:hover::before {
+  width: 60px;
+}
 
 /* MAIN-CONTENT */
 .main-content {
@@ -167,6 +190,52 @@ border-left: 3px solid #888;
   margin-bottom: 30px;
   color: #777;
 }
+/* FEATURES  */
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.feeatures-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.fuatures-item {
+  width: 280px;
+}
+.fuatures-item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.features-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+  text-transform: uppercase;
+}
+.features-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+.features-divider {
+  margin-top: 0;
+  margin-left: 0;
+  width: 8px;
+  height: 8px;
+  border: 0;
+  background-color: #ddd;
+  box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
+}
+
+
+
 /* RETINA-BG */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
