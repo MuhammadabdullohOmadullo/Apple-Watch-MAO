@@ -52,6 +52,7 @@ outline-offset: 2px ;
 /* BUTTON  */
 .button {
   display: inline-block;
+  min-width: 260px;
   padding: 12px 38px;
   border: 0;
 background-color: var(--primary);
@@ -61,6 +62,7 @@ line-height: 1.5;
 font-weight: bold;
 text-transform: uppercase;
 text-decoration: none;
+text-align: center;
 transition: background-color 0.3s ease;
 }
 .button:hover {
@@ -181,8 +183,12 @@ background-position: left calc(50% + 500px) bottom;
   margin-bottom: 30px;
   font-size: 50px;
   line-height: 1.2;
-  color: #333;
+  color: #000;
 }
+.lead-cta-white .lead-cta-heading {
+  color: #fff;
+}
+
 .lead-cta-text {
   padding-left: 37px;
 border-left: 3px solid #888;
@@ -190,6 +196,12 @@ border-left: 3px solid #888;
   margin-bottom: 30px;
   color: #777;
 }
+.lead-cta-white .lead-cta-text {
+  border-color: #fff;
+  color: #fff;
+}
+
+
 /* FEATURES  */
 .features {
   padding-top: 70px;
@@ -233,7 +245,35 @@ border-left: 3px solid #888;
   background-color: #ddd;
   box-shadow: 16px 0 0 0 #ddd, 32px 0 0 0 #ddd;
 }
+/* PROMO  */
+.promo {
+padding-top: 70px;
+padding-bottom: 70px;
+}
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.promo-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+/* RENNERS  */
+.renners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url(../img/runners\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+}
+.renners-lead-cta {
+  margin-left: auto;
+}
 
 
 /* RETINA-BG */
